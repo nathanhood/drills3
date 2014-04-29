@@ -72,13 +72,13 @@
         },
         'dataProvider': chartData,
         'valueAxes': [{
-            'id':'v1',
+            'id':'v1', //name of axis.
             'axisColor': '#FF6600',
             'axisThickness': 2,
             'gridAlpha': 0,
             'axisAlpha': 1,
             'position': 'left',
-            'minimum': 0,
+            'minimum': 0, //added min and max for y-axis since ratins will be from 0 to 100
             'maximum': 100
         }],
         // {
@@ -109,16 +109,16 @@
             'bulletBorderThickness': 1,
             'hideBulletsCount': 30,
             'title': 'audience',
-            'valueField': 'visits',
+            'valueField': 'visits', //should be able to change to 'audience' variable name
     		'fillAlphas': 0
         }, {
-            'valueAxis': 'v2',
+            'valueAxis': 'v1', // same axis for both
             'lineColor': '#FCD202',
             'bullet': 'square',
             'bulletBorderThickness': 1,
             'hideBulletsCount': 30,
             'title': 'critics',
-            'valueField': 'hits',
+            'valueField': 'hits', //should be able to change to 'critics' variable name
     		'fillAlphas': 0
         }],
         // {
@@ -137,7 +137,8 @@
         },
         'categoryField': 'movie',
         'categoryAxis': {
-            'parseDates': false,
+            'labelRotation': 30, //added this to tilt the names on the x-axis.
+            // 'parseDates': false, //had to change to false for the graph to register with new x-axis and fewer charts.
             'axisColor': '#DADADA',
             'minorGridEnabled': true
         }
