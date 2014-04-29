@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title A4
+    link(rel='stylesheet', href='./css/a4.css')
+  body
+    h1 A4
+
+    .controls
+      input#input(type='text' placeholder='start,end,step')
+      button#go Random Array Cubed
+    #output
+
+    script(src='./js/vendor/traceur.js') //google compiler for es6
+    script(src='./js/vendor/experimental.js') //turns on experimental features of js
+    script(src='./js/vendor/jquery-2.1.0.js')
+    script(src='./js/vendor/lodash-2.4.1.js')
+    script(src='./js/vendor/moment-2.6.0.js')
+    script(src='./js/es6/a4.js')

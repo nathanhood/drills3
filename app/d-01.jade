@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title JS++
+    link(rel='stylesheet', href='./css/d-01.css')
+  body
+    h1 JS++
+
+
+    input#strings(type='text')
+    button#go-strings Strings
+    #output
+
+    input#begin(type='text')
+    input#end(type='text')
+    input#step(type='text')
+    button#go-nums Numbers
+    #nums-output
+
+    script(src='./js/vendor/traceur.js') //google compiler for es6
+    script(src='./js/vendor/experimental.js') //turns on experimental features of js
+    script(src='./js/vendor/jquery-2.1.0.js')
+    script(src='./js/vendor/lodash-2.4.1.js')
+    script(src='./js/vendor/moment-2.6.0.js')
+    script(src='./js/es6/d-01.js')
